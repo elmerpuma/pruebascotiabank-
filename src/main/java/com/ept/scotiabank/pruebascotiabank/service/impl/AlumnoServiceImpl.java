@@ -22,6 +22,7 @@ public class AlumnoServiceImpl implements AlumnoService {
 
     public AlumnoServiceImpl(AlumnoRepository repo) {
         this.repo = repo;
+        this.databaseClient = databaseClient;
     }
     @Override
     public Mono<Void> guardarAlumno(Alumno alumno) {

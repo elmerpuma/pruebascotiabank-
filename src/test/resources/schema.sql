@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS alumnos;
+CREATE TABLE alumnos (
+    id VARCHAR(255) PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255) NOT NULL,
+    estado VARCHAR(20) NOT NULL,
+    edad INT NOT NULL
+);

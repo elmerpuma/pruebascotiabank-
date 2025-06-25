@@ -11,6 +11,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
+import java.util.Objects;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,6 +34,7 @@ public class Alumno {
     @Min(value = 1, message = "Edad mínima es 1")
     @Max(value = 120, message = "Edad máxima es 120")
     private int edad;
+
 }
 
 
